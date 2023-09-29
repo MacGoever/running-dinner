@@ -1,6 +1,7 @@
-/* Group List Methods */
+/* List containing the more structured ojects */
 let resultList = [];
 
+/* Object containing info about a person */
 function person(name, alk, veggie){
   this.name = name;
   this.alk = alk;
@@ -26,27 +27,26 @@ function person(name, alk, veggie){
   };
 }
 
+/* Object containing info about a house */
 function houseWithPeople(address, person1, person2){
   this.address = address;
   this.person1 = person1;
   this.person2 = person2;
 }
 
+/* Take the human editable list and put it into a more data-freindly list */
+function createResultList(household){
+  let tempperson1 = household.person1;
+  let tempperson2 = household.person2;
+  let person1 = new person(tempperson1.name,tempperson1.alk,tempperson1.veggie);
+  let person2 = new person(tempperson2.name,tempperson2.alk,tempperson2.veggie);
+  let house = new houseWithPeople(household.address, person1, person2);
+  resultList.push(house);
+}
+ /* Also add all participants on the page */
 function fillGroupList(participants){
-  let tempperson1;
-  let tempperson2;
-  let person1;
-  let person2;
-  let house;
-  for (i = 0; i < participants.length; i++) {
-    tempperson1 = participants[i].person1;
-    person1 = new person(tempperson1.name,tempperson1.alk,tempperson1.veggie);
-    tempperson2 = participants[i].person2;
-    person2 = new person(tempperson2.name,tempperson2.alk,tempperson2.veggie);
-    house = new houseWithPeople(participants[i].address, person1, person2);
-    addGroupToList(house);
-    resultList.push(house);
-  }
+  participants.forEach(createResultList);
+  resultList.forEach(addGroupToList);
 }
 
 function addGroupToList(newGroup){
