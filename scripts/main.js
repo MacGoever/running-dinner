@@ -1,32 +1,53 @@
 /* Group List Methods */
+let resultList = [];
+
+function person(name, alk, veggie){
+  this.name = name;
+  this.alk = alk;
+  this.veggie = veggie;
+  this.starter = null;
+  this.main = null;
+  this.dessert = null;
+  this.uuid = crypto.randomUUID();
+  this.nameWithProperties = function() {
+    let result = this.name;
+    if (this.veggie) {
+      result += '&#129367';
+    }else{
+      result += '&#127831';
+    }
+   
+    if (this.alk) {
+      result += '&#127863';
+    }else{
+      result += '&#129371';
+    }
+    return result;
+  };
+}
+
+function houseWithPeople(address, person1, person2){
+  this.address = address;
+  this.person1 = person1;
+  this.person2 = person2;
+}
+
 function fillGroupList(participants){
-  participants.forEach(addIcons);
-  participants.forEach(addGroupToList);
-}
-
-function addIcons(participant){
-  if (participant.person1.veggie === true){
-    participant.person1.name += '&#129367';
-  }else{
-    participant.person1.name += '&#127831';
-  }
-  if (participant.person2.veggie === true){
-    participant.person2.name += '&#129367';
-  }else{
-    participant.person2.name += '&#127831';
-  }
-  if (participant.person1.alk === true){
-    participant.person1.name += '&#127863';
-  }else{
-    participant.person1.name += '&#129371';
-  }
-  if (participant.person2.alk === true){
-    participant.person2.name += '&#127863';
-  }else{
-    participant.person2.name += '&#129371';
+  let tempperson1;
+  let tempperson2;
+  let person1;
+  let person2;
+  let house;
+  for (i = 0; i < participants.length; i++) {
+    tempperson1 = participants[i].person1;
+    person1 = new person(tempperson1.name,tempperson1.alk,tempperson1.veggie);
+    tempperson2 = participants[i].person2;
+    person2 = new person(tempperson2.name,tempperson2.alk,tempperson2.veggie);
+    house = new houseWithPeople(participants[i].address, person1, person2);
+    addGroupToList(house);
+    resultList.push(house);
   }
 }
-
 
 function addGroupToList(newGroup){
   var groupTable = document.getElementById("group-table");
@@ -36,13 +57,13 @@ function addGroupToList(newGroup){
   addressCell.style.textAlign = "left";
   person1Cell.style.textAlign = "left";
   addressCell.innerHTML = newGroup.address;
-  person1Cell.innerHTML = newGroup.person1.name;
+  person1Cell.innerHTML = newGroup.person1.nameWithProperties();
   var personRow = groupTable.insertRow();
   var emptyCell = personRow.insertCell(0);
   var person2Cell = personRow.insertCell(1);
   person2Cell.style.textAlign = "left";
   emptyCell.innerHTML = "";
-  person2Cell.innerHTML = newGroup.person2.name;
+  person2Cell.innerHTML = newGroup.person2.nameWithProperties();
 }
 
 function generateColumn(participants, offset){

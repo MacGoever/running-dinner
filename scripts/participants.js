@@ -8,7 +8,7 @@ let participants = [
 {address: "Haus 98", person1: {name: "Alice 7", alk: true, veggie: false}, person2: {name: "Bob 7", alk: true, veggie: false}},
 {address: "Haus 99", person1: {name: "Alice 8", alk: true, veggie: false}, person2: {name: "Bob 8", alk: true, veggie: false}},
 {address: "Haus 10", person1: {name: "Alice 9", alk: true, veggie: false}, person2: {name: "Bob 9", alk: true, veggie: false}},
-{address: "Haus 11", person1: {name: "Alice 10", alk: false, veggie: false}, person2: {name: "Bob 11", alk: true, veggie: false}},
+{address: "The White House, Washington DC", person1: {name: "Mr President", alk: false, veggie: false}, person2: {name: "First lady", alk: true, veggie: true}},
 {address: "Haus 12", person1: {name: "Alice 11", alk: true, veggie: false}, person2: {name: "Bob 12", alk: true, veggie: false}},
 {address: "Haus 92", person1: {name: "Alice 12", alk: false, veggie: false}, person2: {name: "Bob 13", alk: true, veggie: false}},
 {address: "Haus 17", person1: {name: "Alice 13", alk: true, veggie: false}, person2: {name: "Bob 14", alk: true, veggie: false}},
