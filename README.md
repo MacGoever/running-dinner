@@ -1,17 +1,22 @@
 # running-dinner
 :fork_and_knife:  Running dinner group randomizer.
 </br></br>
-![app](https://cloud.githubusercontent.com/assets/16224847/25619931/e742a634-2f4c-11e7-9770-c69a9ff791f1.PNG)
+#How to use
+1. Modify scipts/participants.js with your real participants
+1. Open the Index file in your Browser
+1. Get a random mapping of Starter / Main / Dessert to a place
+1. Get a random mapping of guests to places
+1. Export the host / guest Info .csv files
+1. Create a serial letter based on these exports (examples included)
+1. Enjoy your event!
+
+
 # Features
-- [X] Group categorization by meal preference type (vegetarian / meat eaters)
-- [X] List of current added groups
-- [X] Run the randomizing algorithm multiple times over the same set
-- [X] Algorithm matches vegetarians with meat eaters only when necessary
-- [X] Prettified with [Bootstrap](http://getbootstrap.com/)
-
-## Credits
-
-Build for easing the randomizing process of running dinners of [VIS-Vaxjo](http://www.visesn.org/what-vis).
+- [X] Equal distribution of guests over places
+- [X] Can handle numbers of hosts that can't be devided by 3
+- [X] Handles info about vegetarians and abstaining from alcohol
+- [X] exports CSV full of information 
+- [X] Prettified with [Bootstrap](http://getbootstrap.com/) it seems?
 
 ## License
-MIT © [Alain Perkaz](https://aperkaz.github.io)
+MIT © [MacGoever](https://github.com/MacGoever/running-dinner)
