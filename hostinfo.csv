@@ -1,0 +1,10 @@
+course,address,host1,host2,numberOfGuests,numberOfVegetarians,numberOfNonAlk
+Main,Haus 6,Alice 6,Bob 6,4,1,1
+Starter,Haus 4,Alice 4,Bob 4,4,1,1
+Dessert,Haus 5,Alice 5,Bob 5,4,1,0
+Main,Haus 3,Alice 3,Bob 3,4,0,0
+Starter,Haus 10,Alice 10,Bob 10,4,0,1
+Dessert,Haus 2,Alice 2,Bob 2,4,0,0
+Main,Haus 7,Alice 7,Bob 7,4,0,0
+Starter,Haus 1,Alice 1,Bob 1,4,1,0
+Dessert,Haus 100,Alice 100,Bob 100,4,0,1

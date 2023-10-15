@@ -1,0 +1,49 @@
+name,currentAddress,currentCourse,nextAddress,nextCourse
+Alice 1,Haus 1,Home,Haus 10,Starter
+Bob 1,Haus 1,Home,Haus 6,Starter
+Alice 1,Haus 1,Main,Haus 3,Dessert
+Bob 1,Haus 1,Main,Haus 7,Dessert
+Bob 2,Haus 1,Main,Haus 5,Dessert
+Bob 6,Haus 1,Main,Haus 3,Dessert
+Bob 5,Haus 1,Main,undefined,Dessert
+Alice 5,Haus 1,Main,undefined,Dessert
+Alice 2,Haus 2,Starter,Haus 100,Main
+Bob 2,Haus 2,Starter,Haus 1,Main
+Alice 7,Haus 2,Starter,Haus 100,Main
+Alice 4,Haus 2,Starter,undefined,Main
+Bob 3,Haus 2,Starter,Haus 100,Main
+Alice 3,Haus 2,Starter,Haus 4,Main
+Alice 5,Haus 5,Home,Haus 6,Starter
+Bob 5,Haus 5,Home,Haus 10,Starter
+Alice 100,Haus 100,Home,Haus 6,Starter
+Bob 100,Haus 100,Home,Haus 10,Starter
+Alice 100,Haus 100,Main,Haus 5,Dessert
+Bob 100,Haus 100,Main,Haus 7,Dessert
+Bob 3,Haus 100,Main,undefined,Dessert
+Alice 6,Haus 100,Main,Haus 5,Dessert
+Alice 2,Haus 100,Main,Haus 3,Dessert
+Alice 7,Haus 100,Main,undefined,Dessert
+Alice 10,Haus 10,Starter,Haus 4,Main
+Bob 10,Haus 10,Starter,Haus 4,Main
+Bob 100,Haus 10,Starter,undefined,Main
+Alice 1,Haus 10,Starter,undefined,Main
+Bob 4,Haus 10,Starter,undefined,Main
+Bob 5,Haus 10,Starter,Haus 1,Main
+Alice 7,Haus 7,Home,Haus 2,Starter
+Bob 7,Haus 7,Home,Haus 6,Starter
+Alice 4,Haus 4,Home,Haus 2,Starter
+Bob 4,Haus 4,Home,Haus 10,Starter
+Alice 4,Haus 4,Main,Haus 3,Dessert
+Bob 4,Haus 4,Main,Haus 7,Dessert
+Bob 10,Haus 4,Main,Haus 5,Dessert
+Alice 3,Haus 4,Main,undefined,Dessert
+Alice 10,Haus 4,Main,Haus 7,Dessert
+Bob 7,Haus 4,Main,undefined,Dessert
+Alice 6,Haus 6,Starter,Haus 100,Main
+Bob 6,Haus 6,Starter,Haus 1,Main
+Alice 100,Haus 6,Starter,undefined,Main
+Bob 1,Haus 6,Starter,undefined,Main
+Alice 5,Haus 6,Starter,Haus 1,Main
+Bob 7,Haus 6,Starter,Haus 4,Main
+Alice 3,Haus 3,Home,Haus 2,Starter
+Bob 3,Haus 3,Home,Haus 2,Starter
